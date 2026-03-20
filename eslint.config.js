@@ -8,6 +8,6 @@ module.exports = defineConfig([
     files: ["generators/**/*.js", "**/*.spec.js", "**/*-solution.js", "*.js"],
     plugins: { js },
     extends: ["js/recommended"],
-    languageOptions: { globals: { ...globals.node, ...globals.jest } },
+    languageOptions: { sourceType: "script", globals: { ...globals.node, ...globals.jest } },
   },
 ]);
